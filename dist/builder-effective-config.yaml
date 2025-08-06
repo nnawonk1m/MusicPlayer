@@ -1,0 +1,14 @@
+directories:
+  output: dist
+  buildResources: build
+appId: com.nnawonk1m.musicplayer
+mac:
+  category: public.app-category.music
+  icon: src/assets/icon.icns
+files:
+  - filter:
+      - src/**/*
+      - assets/**/*
+      - node_modules/**/*
+      - package.json
+electronVersion: 37.2.5

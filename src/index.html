@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Nawon's Music Player</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="sticker"><img src="assets/ribbon.png"></div>
+    <div class="album-cover"><img src="covers/DearMyAll.jpeg"></div>
+
+    <div class="info">
+      <div class="title">Dear My All</div>
+      <div class="artist">Mingginyu</div>
+    </div>
+
+    <div class="progress-bar">
+      <div class="total"></div>
+      <div class="current">
+        <div class="bar"></div>
+        <div class="circle"></div>
+      </div>
+    </div>
+
+    <div class="time">
+      <div class="total-time">0:00</div>
+      <div class="current-time">0:00</div>
+    </div>
+
+    <div class="controls">
+      <div class="button back">
+        <img src="assets/Back Button.png">
+      </div>
+      <div class="button play">
+        <img src="assets/Play Button.png" class="icon">
+      </div>
+      <div class="button next">
+        <img src="assets/Next Button.png">
+      </div>
+    </div>
+
+    <div class="lyrics-screen">
+      <h1>Lyrics</h1>
+      <div class="lyrics-content"></div>
+    </div>
+
+    <div class="footer">
+      <div class="action shuffle">
+        <img src="assets/Shuffle.png" id="shuffleImg">
+      </div>
+      <div class="action repeat">
+        <img src="assets/Repeat.png" id="repeatImg">
+      </div>
+      <div class="action lyrics">
+        <img src="assets/Lyrics.png" id="lyricsImg">
+      </div>
+      <div class="action queue">
+        <img src="assets/Queue.png" id="queueImg">
+      </div>
+      <div class="volume-icon">
+        <img src="assets/Volume.png" id="volumeImg">
+      </div>
+      <div class="volume-bar">
+        <div class="total-volume"></div>
+        <div class="current-volume"></div>
+      </div>
+    </div>
+
+    <div class="queue-screen hidden">
+      <div class="queue-header">Queue</div>
+      <div class="now-playing">Now Playing</div>
+      <div class="song-profile">
+        <div class="now-playing-cover">
+          <img src="covers/DearMyAll.jpeg">
+        </div>
+        <div class="now-playing-profile">
+          <div class="now-playing-title">Dear My All</div>
+          <div class="now-playing-artist">Mingginyu</div>
+        </div>
+      </div>
+      <div class="next-song">Next Song</div>
+      <div class="playlist"></div>
+    </div>
+    <script type="module" src="player.js"></script>
+  </body>
+</html>
